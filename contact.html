@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <div class="container--fluid">
+      <main>
+        <header class="header--main">
+            <div class="content-wrapper">
+              <div class="title-container">
+                  <div class="title">
+                    <h1>Register Now!!!</h1>
+                  </div>
+                  <div class="description-wrapper">
+                    <p>Fill the form below to get Enlisted to be trained</p>
+                  </div>
+                </div>
+            </div>
+        </header>
+        <form action="">
+          <div class="content-wrapper">
+            <div class="layout--grid">
+              <div class="grid--col-1-row-1">
+                <div class="input-control">
+                  <div class="input-field-aria">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Please enter name"
+                      aria-autocomplete="none"
+                    />
+                  </div>
+                  <div class="validation-mssg">
+                    <span aria-invalid="false"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="grid--col-2-row-1">
+                <div class="input-control">
+                  <div class="input-field-aria">
+                    <label for="name">Email</label>
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Enter email"
+                      aria-autocomplete="none"
+                    />
+                  </div>
+                  <div class="validation-mssg">
+                    <span aria-invalid="false"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="grid--col-1-row-2">
+                <div class="input-control">
+                  <div class="input-field-aria">
+                    <label for="name">Phone</label>
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Enter Phone"
+                      autocapitalize="off" maxlength="11"
+                    />
+                  </div>
+                  <div class="validation-mssg">
+                    <span aria-invalid="false"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="grid--col-2-row-2">
+                <div class="input-control">
+                  <div class="input-field-aria">
+                    <label for="name">Select course</label>
+                    <div class="select">
+                      <a href = '' class="select--header" aria-expanded="false">
+                        <div
+                          class="placeholder select-title"
+                        >-- Select item --</div>
+                        <i class="fas fa-sort-down"></i>
+                      </a>
+                      <ul class="select-option-list">
+                          <li>
+                              <div class="option-1 option">
+                                  <span>
+                                    <a href="">Web Development</a>
+                                  </span>
+                              </div>
+                          </li>
+                          <li>
+                            <div class="option-2 option">
+                                <span>
+                                  <a href="">UI/UX Design</a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="option-3 option">
+                                <span>
+                                  <a href="">Marketing</a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="option-4 option">
+                                <span>
+                                  <a href="">Data Science</a>
+                                </span>
+                            </div>
+                            <li>
+                                <div class="option-5 option">
+                                    <span>
+                                      <a href="">Machine Learning</a>
+                                    </span>
+                                </div>
+                            </li>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="validation-mssg">
+                    <span aria-invalid="false"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="grid--col-1-span-2-row-3">
+                <div class="input-control">
+                  <div class="input-field-aria">
+                    <label for="name">Address</label>
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Enter Address"
+                      autocapitalize="off"
+                    />
+                  </div>
+                  <div class="validation-mssg">
+                    <span aria-invalid="false"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="grid--col-1-row-4">
+                <div class="input-control">
+                  <div class="input-field-aria">
+                    <label for="name">Promo</label>
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Promo code(Optional)"
+                      autocapitalize="off"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="grid--col-2-row-4">
+                <div class="input-control">
+                  <div class="input-field-aria">
+                    <div class="code-s">
+                      <label for="name">Type what you see</label>
+                      <div class="verification-code">
+                        <span>56j54</span>
+                      </div>
+                    </div>
+                    <input
+                      type="text"
+                      class="input"
+                      placeholder="Enter what you see"
+                      autocapitalize="off"
+                    />
+                  </div>
+                  <div class="validation-mssg">
+                    <span aria-invalid="false"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="grid--col-1-span-2-row-5">
+                <a href class="btn-wrapper submit">
+                  <div class="onsend">
+                    <div class="animation-container">
+                      <div class="circle-box">
+                        <div class="circle-box--sm"></div>
+                      </div>
+                      <div class="verifying--mssg"><p>VERIFYING...</p></div>
+                    </div>
+                  </div>
+                  <div class="default-state default-state--js">
+                    <p>SEND REQUEST</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </main>
+      <footer>
+        <div class="content-wrapper">
+          <header class="title--footer">
+            <h2>Contact Info</h2>
+          </header>
+          <div class="contact-info">
+            <div class="layout--grid">
+              <div class="icon-wrapper icon-location">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="details addr">
+                <div class="details--title">
+                  <p>Divtag Automation</p>
+                </div>
+                <div class="details--main">
+                  <p>
+                    #98, Olu-Obasanjo Road Opp Zenith Bank, D/Line, Port
+                    Harcourt, Rivers State
+                  </p>
+                </div>
+              </div>
+              <div class="icon-wrapper icon-phone">
+                <i class="fas fa-phone-volume"></i>
+              </div>
+              <div class="details phone">
+                <p class="phone-no">08133-881-222, 08037-892-987</p>
+              </div>
+              <div class="icon-wrapper icon-email">
+                <i class="far fa-envelope"></i>
+              </div>
+              <div class="details email">
+                <p class="phone-no">info@divtagautomation.com</p>
+              </div>
+            </div>
+            <div class="contact--social">
+              <div class="contact--social-title">
+                <h4>SOCIAL MEDIA HANDLE</h4>
+              </div>
+              <div class="social-handles">
+                <span class="social-handle--y">
+                  <i class="fab fa-youtube"></i>
+                </span>
+                <span class="social-handle--f">
+                  <i class="fab fa-facebook-f"></i>
+                </span>
+                <span class="social-handle--i">
+                  <i class="fab fa-instagram"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/668d31a701.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="form.js"></script>
+  </body>
+</html>
+

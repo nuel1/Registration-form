@@ -1,0 +1,584 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --error: rgb(189, 10, 46);
+  --success: rgb(52, 170, 52);
+  --primary-btn: rgb(0, 102, 255);
+  --primary-color: rgb(39, 39, 39);
+  --input-placeholder: rgb(150, 150, 150);
+  --secondary-color: rgb(0, 132, 255);
+  --white: rgb(255, 255, 255);
+  --orange: rgb(255, 166, 0);
+  --blue: rgb(0, 38, 255);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+p,
+span,
+a,
+i,
+label {
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+input {
+  outline: none;
+}
+
+input::placeholder,
+.placeholder {
+  color: var(--input-placeholder);
+}
+
+input:focus,
+.btn-wrapper:focus {
+  outline: 1px solid var(--secondary-color);
+}
+
+input:focus,
+.select--header:focus {
+  box-shadow: 0 0 10px rgba(5, 74, 140, 0.589);
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+i {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.select-option-list {
+  height: 0;
+  overflow-y: hidden;
+}
+
+.container--fluid,
+.circle-box,
+.select {
+  position: relative;
+}
+
+.container--fluid,
+.content-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container--fluid {
+  max-width: 1366px;
+}
+
+.container--fluid {
+  overflow-x: hidden;
+}
+
+.layout--grid,
+input,
+.option a {
+  width: 100%;
+}
+
+.content-wrapper {
+  width: 90%;
+}
+
+.circle-box::before,
+.circle-box::after,
+.select-option-list {
+  position: absolute;
+}
+
+.select-option-list {
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--white);
+}
+
+.select-option-list,
+.validation-mssg span,
+.default-state,
+.onsend {
+  display: none;
+}
+
+.title-container,
+.select--header,
+.circle-box,
+.code-s,
+.submit,
+.social-handles,
+.social-handle--y,
+.social-handle--f,
+.social-handle--i {
+  display: flex;
+}
+
+.title-container,
+.select--header,
+.circle-box,
+.submit,
+.social-handles,
+.social-handle--y,
+.social-handle--f,
+.social-handle--i {
+  align-items: center;
+}
+
+.circle-box,
+.submit,
+.social-handles,
+.social-handle--y,
+.social-handle--f,
+.social-handle--i {
+  justify-content: center;
+}
+
+.select--header {
+  justify-content: space-between;
+}
+
+.title-container {
+  flex-direction: column;
+}
+
+.layout--grid {
+  display: grid;
+}
+
+label,
+input {
+  display: block;
+}
+
+.header--main {
+  padding-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.title {
+  margin-bottom: 0.7rem;
+}
+
+.title h1 {
+  font-size: 2.4rem;
+  color: var(--secondary-color);
+}
+
+.description-wrapper p {
+  text-align: center;
+}
+
+.description-wrapper p,
+.verification-code span,
+.verifying--mssg p,
+.default-state p,
+.details p {
+  font-weight: 700;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+form .layout--grid {
+  grid-template-columns: 100%;
+  grid-gap: 1rem;
+}
+
+.grid--col-1-row-1 {
+  grid-row: 1/2;
+}
+
+.grid--col-2-row-1 {
+  grid-row: 2/3;
+}
+
+.grid--col-1-row-2 {
+  grid-row: 3/4;
+}
+
+.grid--col-2-row-2 {
+  grid-row: 4/5;
+}
+
+.grid--col-1-span-2-row-3 {
+  grid-row: 5/6;
+}
+
+.grid--col-1-row-4 {
+  grid-row: 6/7;
+}
+
+.grid--col-2-row-4 {
+  grid-row: 7/8;
+}
+
+.grid--col-1-span-2-row-5 {
+  grid-row: 8/9;
+}
+
+.validation-mssg {
+  margin: 0.6rem 0;
+}
+
+.validation-mssg span {
+  font-size: 0.85rem;
+}
+
+.input-field-aria label {
+  margin-bottom: 0.5rem;
+}
+
+.input-field-aria input,
+.input-field-aria label,
+.select--header {
+  font-size: 1.1rem;
+}
+
+.input-field-aria input,
+.select--header,
+.submit {
+  padding: 0.7rem 0.5rem;
+  border-radius: 3px;
+  border: 1px solid var(--input-placeholder);
+}
+
+.select-option-list {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: 1px solid var(--input-placeholder);
+}
+
+.option a {
+  line-height: 3;
+  padding: 0 0.5rem;
+  border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.option a:hover {
+  background: rgb(238, 238, 238);
+}
+
+.option-5 a {
+  border-bottom: none;
+}
+
+.selected i {
+  color: var(--input-placeholder);
+  font-size: 0.9rem;
+}
+
+.verification-code {
+  padding: 0.2rem 0.6rem;
+  background: rgb(202, 202, 202);
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+.verification-code span {
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.verification-code,
+.code-s label {
+  width: auto;
+  margin-right: 10px;
+}
+
+.animation-container {
+  display: flex;
+  align-items: center;
+}
+
+.verifying--mssg {
+  margin-left: 10px;
+}
+
+.circle-box {
+  border-radius: 50%;
+}
+
+.circle-box {
+  width: 25px;
+  height: 25px;
+  background: var(--white);
+}
+
+.circle-box::before,
+.circle-box::after {
+  content: "";
+  width: 15px;
+  height: 5px;
+  background: var(--primary-btn);
+  z-index: 2;
+  top: 40%;
+  bottom: 40%;
+  border-radius: 10px;
+}
+
+.circle-box::before {
+  left: -4px;
+}
+
+.circle-box::after {
+  right: -4px;
+}
+
+.circle-box--sm {
+  height: 15px;
+  width: 15px;
+  background: var(--primary-btn);
+  border-radius: inherit;
+}
+
+.submit,
+input,
+.select--header,
+.option a,
+.btn-wrapper {
+  transition: all 0.3s ease;
+}
+
+.submit {
+  cursor: pointer;
+}
+
+.submit {
+  background: var(--primary-btn);
+  border: transparent;
+  margin-bottom: 2rem;
+}
+
+.verifying--mssg {
+  letter-spacing: 0.2rem;
+}
+
+.verifying--mssg p,
+.default-state p {
+  color: var(--white);
+}
+
+footer {
+  padding: 3rem 0 1rem 0;
+  background: rgb(228, 228, 228);
+}
+
+.contact-info .layout--grid {
+  grid-gap: 1rem;
+}
+
+.title--footer,
+.contact--social-title {
+  margin-bottom: 1.2rem;
+}
+
+.icon-wrapper {
+  grid-column: 1/2;
+}
+
+.icon-wrapper i {
+  color: rgb(146, 145, 145);
+}
+
+.details {
+  grid-column: 2/3;
+}
+
+.details--main p {
+  font-weight: normal;
+}
+
+.icon-location,
+.addr {
+  grid-row: 1/2;
+}
+
+.icon-phone,
+.phone {
+  grid-row: 2/3;
+}
+
+.icon-email,
+.email {
+  grid-row: 4/5;
+}
+
+.contact--social {
+  margin-top: 2.3rem;
+  text-align: center;
+}
+
+.social-handle--y,
+.social-handle--f,
+.social-handle--i {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.social-handle--y i,
+.social-handle--f i,
+.social-handle--i i {
+  color: var(--white);
+}
+
+.social-handle--y {
+  background: var(--orange);
+  margin-right: 10px;
+}
+
+.social-handle--f {
+  background: var(--blue);
+  margin-right: 10px;
+}
+
+.social-handle--i {
+  background: var(--orange);
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 440px) {
+  .title h1 {
+    font-size: 2.5rem;
+  }
+
+  .description-wrapper p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 538px) {
+  .title h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 730px) {
+  .contact-info .layout--grid {
+    grid-template-columns: 20px 1fr;
+  }
+}
+
+@media (min-width: 1238px) {
+  .container--fluid {
+    display: flex;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  footer {
+    flex: 0 1 350px;
+    padding-top: 8rem;
+  }
+
+  form .layout--grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid--col-1-row-1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .grid--col-2-row-1 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .grid--col-1-row-2 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+
+  .grid--col-2-row-2 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+
+  .grid--col-1-span-2-row-3 {
+    grid-row: 3/4;
+    grid-column: 1/3;
+  }
+
+  .grid--col-1-row-4 {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+
+  .grid--col-2-row-4 {
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
+
+  .grid--col-1-span-2-row-5 {
+    grid-row: 5/6;
+    grid-column: 1/3;
+  }
+}
+
+/* Javascript classes */
+.expand--js {
+  display: block;
+}
+
+.rejoin--js {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.mssg-error--js {
+  display: block !important;
+  color: var(--error) !important;
+}
+
+.inputField-error--js {
+  outline: 1px solid var(--error);
+}
+
+.inputField-error--js:focus {
+  box-shadow: 0 0 10px rgb(189, 10, 46, 0.589);
+}
+
+.verifying--animation {
+  animation: orbit 2s linear infinite;
+}
+
+.onsend--js {
+  display: block;
+}
+
+.default-state--js {
+  display: block;
+}
