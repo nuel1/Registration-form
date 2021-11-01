@@ -72,14 +72,14 @@ function validateUserFullName() {
     inputField.classList.remove("inputField-error--js");
 
     return inputVal;
-  } else {
-    InputFeed_Node.children[0].setAttribute("aria-invalid", "true");
-    InputFeed_Node.children[0].className = "mssg-error--js";
-    InputFeed_Node.children[0].textContent = `${validationFeedback.NAME_ERROR}`;
-    inputField.classList.add("inputField-error--js");
-
-    return null;
   }
+
+  InputFeed_Node.children[0].setAttribute("aria-invalid", "true");
+  InputFeed_Node.children[0].className = "mssg-error--js";
+  InputFeed_Node.children[0].textContent = `${validationFeedback.NAME_ERROR}`;
+  inputField.classList.add("inputField-error--js");
+
+  return null;
 }
 
 function validateUserEmail() {
@@ -102,15 +102,8 @@ function validateUserEmail() {
         inputField.classList.add("inputField-error--js");
 
         return null;
-      } else {
-        InputFeed_Node.children[0].setAttribute("aria-invalid", "false");
-        InputFeed_Node.children[0].className = "";
-        InputFeed_Node.children[0].textContent = "";
-        inputField.classList.remove("inputField-error--js");
-
-        return inputVal;
       }
-    } else {
+
       InputFeed_Node.children[0].setAttribute("aria-invalid", "false");
       InputFeed_Node.children[0].className = "";
       InputFeed_Node.children[0].textContent = "";
@@ -118,14 +111,21 @@ function validateUserEmail() {
 
       return inputVal;
     }
-  } else {
-    InputFeed_Node.children[0].setAttribute("aria-invalid", "true");
-    InputFeed_Node.children[0].className = "mssg-error--js";
-    InputFeed_Node.children[0].textContent = `${validationFeedback.EMAIL.invalid}`;
-    inputField.classList.add("inputField-error--js");
 
-    return null;
+    InputFeed_Node.children[0].setAttribute("aria-invalid", "false");
+    InputFeed_Node.children[0].className = "";
+    InputFeed_Node.children[0].textContent = "";
+    inputField.classList.remove("inputField-error--js");
+
+    return inputVal;
   }
+
+  InputFeed_Node.children[0].setAttribute("aria-invalid", "true");
+  InputFeed_Node.children[0].className = "mssg-error--js";
+  InputFeed_Node.children[0].textContent = `${validationFeedback.EMAIL.invalid}`;
+  inputField.classList.add("inputField-error--js");
+
+  return null;
 }
 
 function validateUserPhone() {
@@ -140,14 +140,14 @@ function validateUserPhone() {
     inputField.classList.remove("inputField-error--js");
 
     return inputVal;
-  } else {
-    InputFeed_Node.children[0].setAttribute("aria-invalid", "true");
-    InputFeed_Node.children[0].className = "mssg-error--js";
-    InputFeed_Node.children[0].textContent = `${validationFeedback.PHONE_ERROR}`;
-    inputField.classList.add("inputField-error--js");
-
-    return null;
   }
+
+  InputFeed_Node.children[0].setAttribute("aria-invalid", "true");
+  InputFeed_Node.children[0].className = "mssg-error--js";
+  InputFeed_Node.children[0].textContent = `${validationFeedback.PHONE_ERROR}`;
+  inputField.classList.add("inputField-error--js");
+
+  return null;
 }
 
 function validateSelectField() {
@@ -160,12 +160,12 @@ function validateSelectField() {
     InputFeed_Node.children[0].textContent = `${validationFeedback.SELECT_ERROR}`;
 
     return null;
-  } else {
-    InputFeed_Node.children[0].setAttribute("aria-invalid", "false");
-    InputFeed_Node.children[0].className = "";
-    InputFeed_Node.children[0].textContent = "";
-    return selectTitle.textContent;
   }
+
+  InputFeed_Node.children[0].setAttribute("aria-invalid", "false");
+  InputFeed_Node.children[0].className = "";
+  InputFeed_Node.children[0].textContent = "";
+  return selectTitle.textContent;
 }
 
 function validateUserAddress() {
@@ -180,14 +180,14 @@ function validateUserAddress() {
     inputField.classList.remove("inputField-error--js");
 
     return inputVal;
-  } else {
-    InputFeed_Node.children[0].setAttribute("aria-invalid", "true");
-    InputFeed_Node.children[0].className = "mssg-error--js";
-    InputFeed_Node.children[0].textContent = `${validationFeedback.ADDRESS_ERROR}`;
-    inputField.classList.add("inputField-error--js");
-
-    return null;
   }
+
+  InputFeed_Node.children[0].setAttribute("aria-invalid", "true");
+  InputFeed_Node.children[0].className = "mssg-error--js";
+  InputFeed_Node.children[0].textContent = `${validationFeedback.ADDRESS_ERROR}`;
+  inputField.classList.add("inputField-error--js");
+
+  return null;
 }
 
 const promoCode = () => !0;
@@ -207,14 +207,14 @@ function validateUserCode() {
     inputField.classList.remove("inputField-error--js");
 
     return userCode;
-  } else {
-    InputFeed_Node.children[0].setAttribute("aria-invalid", "true");
-    InputFeed_Node.children[0].className = "mssg-error--js";
-    InputFeed_Node.children[0].textContent = `${validationFeedback.CODE_ERROR}`;
-    inputField.classList.add("inputField-error--js");
-
-    return null;
   }
+
+  InputFeed_Node.children[0].setAttribute("aria-invalid", "true");
+  InputFeed_Node.children[0].className = "mssg-error--js";
+  InputFeed_Node.children[0].textContent = `${validationFeedback.CODE_ERROR}`;
+  inputField.classList.add("inputField-error--js");
+
+  return null;
 }
 
 const defaultSubmitState = document.querySelector(".default-state");
