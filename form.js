@@ -280,8 +280,26 @@ function submit(e) {
         storage.push(newData);
         localStorage.setItem("Registered", JSON.stringify(storage));
       }
+      // Send data to database
+      const url = "mydatabase";
+      const header = new Headers({
+        Accept: "registration/form",
+        "Content-Type": "registration form",
+      });
+      const request = new Request(url, {
+        method: "POST",
+        headers: header,
+        mode: "cors",
+        body: JSON.stringify(newData),
+      });
 
-      resetAllField();
+      fetch(request)
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Sent successful");
+          resetAllField();
+        })
+        .catch((error) => console.log(error));
     }
   }, 4000);
 }
