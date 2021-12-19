@@ -1,4 +1,4 @@
-#Registration Form
+# Registration Form
 
 This project simulates a registration form for appyling for a training at a large training institute.
 
