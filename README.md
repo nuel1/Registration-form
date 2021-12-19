@@ -21,7 +21,7 @@ building this complete registration form.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://github.com/nuel1/Registration-form
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -37,7 +37,7 @@ building this complete registration form.
 
 ### What I learned
 
-I pretty much learnt quite alot from building this project. Here is an outline of things i learnt throught building this project:
+I pretty much learnt quite alot in this project. Here is an outline of things i learnt throught building this project:
 
 - Regular Expression( purposefully for validating user information ).
 - CSS Grid.
