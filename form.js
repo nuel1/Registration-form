@@ -270,6 +270,7 @@ function submit(e) {
         this.address = userData[4];
         this.promoCode = userData[5];
         this.code = userData[6];
+        alert("Submited");
       })();
       if (localStorage.getItem("Registered")) {
         const storage = JSON.parse(localStorage.getItem("Registered"));
@@ -280,26 +281,6 @@ function submit(e) {
         storage.push(newData);
         localStorage.setItem("Registered", JSON.stringify(storage));
       }
-      // Send data to database
-      const url = "mydatabase";
-      const header = new Headers({
-        Accept: "registration/form",
-        "Content-Type": "registration form",
-      });
-      const request = new Request(url, {
-        method: "POST",
-        headers: header,
-        mode: "cors",
-        body: JSON.stringify(newData),
-      });
-
-      fetch(request)
-        .then((response) => response.json())
-        .then((data) => {
-          console.log("Sent successful");
-          resetAllField();
-        })
-        .catch((error) => console.log(error));
     }
   }, 4000);
 }
